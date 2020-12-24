@@ -1,0 +1,30 @@
+.row {
+  display: flex;
+}
+
+#result-wrap {
+  margin-left: 20px;
+  width: 65%;
+  padding: 20px;
+  border-left: solid 1px #ccc;
+
+  .item-box {
+    float: left;
+    margin: 10px;
+    height: 120px;
+    display: flex;
+    position: relative;
+    border: 1px solid;
+    width: 180px;
+    overflow: hidden;
+    input[type="checkbox"] {
+      position: absolute;
+      right: 0;
+      top: 5px;
+    }
+    .item-image{
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

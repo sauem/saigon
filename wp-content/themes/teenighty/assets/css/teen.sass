@@ -1,0 +1,219 @@
+@font-face
+  font-family: neon
+  src: url("../font/Clip.ttf")
+
+.text-2
+  text-overflow: ellipsis
+  overflow: hidden
+  line-height: 25px
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical
+  padding-top: 15px
+
+.text-3
+  text-overflow: ellipsis
+  overflow: hidden
+  line-height: 25px
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical
+  padding-top: 15px
+
+.form-control
+  background: #393939
+  width: 50%
+  border: none
+  border-radius: 50px
+  height: 35px
+  color: white
+
+  ::-webkit-input-placeholder
+    color: white
+
+  ::placeholder
+    color: white
+
+  &:focus
+    background: white
+
+
+body
+  overflow-x: hidden
+
+  header
+    width: 100%
+    z-index: 99
+
+    *
+      color: white
+
+    &.fixed-header
+      position: fixed
+      top: 0
+      left: 0
+
+  footer
+    color: white
+
+    .footer-top
+      margin-top: 150px
+      background: #EFEFEF
+      color: #7E7E7E
+      padding-top: 100px
+      padding-bottom: 50px
+      position: relative
+
+      .logo-bottom
+        padding: 10px
+        border: 10px solid white
+        border-radius: 20px
+        width: fit-content
+        background: #EFEFEF
+        position: absolute
+        left: 0
+        margin: auto
+        right: 0
+        top: -100px
+
+    .footer-bottom
+      padding-bottom: 50px
+      padding-top: 50px
+      background: black
+
+      .social
+        margin: auto
+        text-align: center
+        width: auto
+
+        a
+          background: white
+          padding: 10px
+          width: 40px
+          height: 40px
+          display: flex
+          align-items: center
+          justify-content: center
+          margin: 5px
+          border-radius: 50%
+          font-size: 20px
+
+          i
+            color: black
+
+      ul
+        list-style: none
+
+        li
+          margin: 5px
+          font-weight: bold
+          display: inline-block
+
+  .gradient-divider
+    background: linear-gradient(to right, #23DBF9 0%, #FF64BD 100%) left bottom black no-repeat
+    background-size: 100% 5px
+    background-position-x: 0px
+
+  .size-50
+    font-size: 50px
+
+  .neon
+    color: #fee
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000
+    font-family: neon, sans-serif
+
+  #wrap
+    margin-top: 65px
+
+    .item-box
+      border-radius: 10px
+      border: solid 1px white
+      overflow: hidden
+      margin: 10px
+
+      .text
+        padding: 10px
+        min-height: 120px
+        max-height: 180px
+
+        h5 > a
+          color: black
+
+        p
+
+      .img
+        display: flex
+        overflow: hidden
+        max-height: 180px
+        img
+          object-fit: cover
+          object-position: center
+
+    .box
+      .box-title
+        h2
+          font-family: neon, sans-serif
+          text-align: center
+          font-size: 45px
+
+    section
+      &.box
+        border-radius: 34px
+        background-color: #E6E6E6
+        padding: 20px
+        margin-top: 10px
+        margin-bottom: 10px
+
+
+        &.slider
+          padding: 0
+          overflow: hidden
+
+          .owl-dots
+            position: absolute
+            bottom: 10px
+            left: 0
+            right: 0
+
+          .slider-item
+            position: relative
+            background-color: rgba(0, 0, 0, .2)
+            background-blend-mode: multiply
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            min-height: 350px
+
+            .text
+              padding: 20px
+              color: white
+              display: flex
+              justify-content: center
+              align-items: center
+              height: 100%
+              flex-direction: column
+              min-height: 350px
+
+.woocommerce
+  .quantity
+    .qty
+      width: 5.5em !important
+
+.navbar
+  a
+    font-weight: bold
+
+.list-thumbs
+  margin-top: 10px
+
+  a
+    display: flex
+    height: 100px
+    overflow: hidden
+
+@media (max-width: 467px)
+  .container
+    padding: 0px
+  section
+    &.box
+      border-radius: 0px !important
